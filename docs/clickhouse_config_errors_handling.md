@@ -4,7 +4,7 @@ When operator performs rolling update and create procedures, it monitors health 
 Operator polls StatefulSet status and wait for some configurable time for StatefulSet to report **Ready** status reached. 
 In case StatefulSet successfully reports **Ready** status, all is good and operator can move on to the next StatefulSet.
 However, in case ClickHouse configuration is incorrect or due to any other reason ClickHouse is unable to start, StatefulSet would not reach **Ready** status.
-In tis case, operator has to do something and decide what to do regarding the following questions:
+In this case, operator has to do something and decide what to do regarding the following questions:
 1. What to do with current failed StatefulSet?
 1. Should operator continue with rolling update?
 
